@@ -1,0 +1,226 @@
+.comp-hub-container {
+  padding: var(--space-4);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.comp-header {
+  margin-bottom: var(--space-6);
+}
+
+.comp-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+  padding: var(--space-4);
+  background: linear-gradient(135deg, var(--surface-elevated) 0%, var(--pitch-black) 100%);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+}
+
+.comp-icon {
+  color: var(--nova-orange);
+  background: rgba(255, 94, 0, 0.1);
+  padding: var(--space-2);
+  border-radius: var(--radius-md);
+  box-sizing: content-box;
+}
+
+.comp-title-group h1 {
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+
+.comp-season {
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .comp-title-group h1 {
+    font-size: 3rem;
+  }
+}
+
+.comp-nav {
+  display: flex;
+  gap: var(--space-2);
+  border-bottom: 1px solid var(--border-subtle);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.comp-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.comp-tab {
+  padding: var(--space-3) var(--space-4);
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 1rem;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+
+.comp-tab:hover {
+  color: var(--stadium-white);
+}
+
+.comp-tab.active {
+  color: var(--nova-orange);
+  border-bottom-color: var(--nova-orange);
+}
+
+/* Standings Table */
+.standings-panel {
+  background-color: var(--surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.standings-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.standings-table th {
+  background-color: rgba(0,0,0,0.2);
+  padding: var(--space-3);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.standings-table td {
+  padding: var(--space-3);
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.standings-table tr:last-child td {
+  border-bottom: none;
+}
+
+.standings-table tr:hover td {
+  background-color: var(--surface-elevated-hover);
+}
+
+/* Row Highlights */
+.promo-zone .col-pos {
+  color: var(--success);
+  font-weight: 800;
+}
+.relegation-zone .col-pos {
+  color: var(--error);
+  font-weight: 800;
+}
+
+.col-pos {
+  width: 40px;
+  text-align: center;
+}
+
+.col-num {
+  width: 40px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.col-pts {
+  color: var(--stadium-white);
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.team-cell {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.team-logo {
+  font-size: 1.2rem;
+}
+
+.team-name {
+  display: none;
+}
+.team-short {
+  display: inline;
+}
+
+@media (min-width: 640px) {
+  .team-name {
+    display: inline;
+    font-weight: 600;
+  }
+  .team-short {
+    display: none;
+  }
+}
+
+.hide-mobile {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .hide-mobile {
+    display: table-cell;
+  }
+}
+
+/* Teams Grid */
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-4);
+}
+
+.team-card {
+  background-color: var(--surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.team-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--nova-orange);
+}
+
+.team-card-logo {
+  font-size: 3rem;
+}
+
+.team-card-name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.view-profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--nova-orange);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-top: auto;
+}

@@ -1,0 +1,74 @@
+:root {
+  /* Brand Colors */
+  --nova-orange: #ff5e00;
+  --pitch-black: #101113;
+  --stadium-white: #f5f5f2;
+  --steel-grey: #777b80;
+
+  /* Semantic Colors */
+  --surface-elevated: #1a1c1f;
+  --surface-elevated-hover: #22252a;
+  --border-subtle: #2a2d33;
+  --text-muted: #9ba0a6;
+  --focus-ring: rgba(255, 94, 0, 0.4);
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+
+  /* Typography */
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+
+  /* Borders */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--pitch-black);
+  color: var(--stadium-white);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- 
+    NovaSport "N" Logo Symbol
+    Concept: Forward movement (skew), connection (unified crossing paths), 
+    and a pitch/directional influence (sharp, angular geometry).
+    Designed to work perfectly in monochrome and small scales (favicon).
+  -->
+  <g transform="translate(256, 256) skewX(-18) translate(-256, -256)">
+    <!-- Left Stem -->
+    <polygon points="140,412 210,412 210,100 140,100" fill="#ff5e00" />
+    
+    <!-- Right Stem -->
+    <polygon points="330,412 400,412 400,100 330,100" fill="#ff5e00" />
+    
+    <!-- Angular, intersecting diagonal creating a dynamic forward arrow -->
+    <polygon points="140,100 240,100 400,412 300,412" fill="#ff5e00" />
+    
+    <!-- Cut-out / Negative space to imply paths/connections -->
+    <polygon points="190,140 210,140 210,180" fill="#101113" />
+    <polygon points="330,332 350,372 330,372" fill="#101113" />
+  </g>
+</svg>
