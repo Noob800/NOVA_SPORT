@@ -1,0 +1,89 @@
+.player-profile-container {
+  padding: var(--space-4);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pp-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.pp-avatar-container {
+  width: 96px;
+  height: 96px;
+  background-color: var(--pitch-black);
+  border-radius: var(--radius-full);
+  border: 2px solid var(--border-subtle);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pp-avatar {
+  font-size: 3.5rem;
+}
+
+.pp-title {
+  text-align: center;
+}
+
+.pp-title h1 {
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+
+.pp-team {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.stat-box {
+  background-color: var(--surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: var(--font-display);
+  color: var(--stadium-white);
+}
+
+.card-icon {
+  width: 16px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+.card-icon.yellow {
+  background-color: var(--warning);
+}
+
+.card-icon.red {
+  background-color: var(--error);
+}

@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+logs/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Local agents and IDE
+.agents/
+.vscode/
+
+# Build outputs
+dist/
+dist-ssr/
+
+# Scripts with direct admin tokens
+scripts/

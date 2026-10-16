@@ -1,0 +1,192 @@
+.match-center-container {
+  padding: var(--space-4);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-6);
+}
+
+.competition-tag {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mc-scoreboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-6) var(--space-4);
+}
+
+.mc-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.mc-time {
+  color: var(--nova-orange);
+  font-weight: 700;
+  font-size: 1.25rem;
+  animation: pulse 2s infinite;
+}
+
+.mc-teams {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: var(--space-6);
+}
+
+.mc-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  flex: 1;
+}
+
+.team-logo-large {
+  background-color: var(--pitch-black);
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-full);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+  border: 2px solid var(--border-subtle);
+}
+
+.mc-team h2 {
+  font-size: 1.1rem;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.mc-score-display {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 3.5rem;
+  font-weight: 800;
+  font-family: var(--font-display);
+  padding: 0 var(--space-4);
+}
+
+.mc-goal-scorers {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  padding-top: var(--space-4);
+  border-top: 1px dashed var(--border-subtle);
+}
+
+.home-scorers, .away-scorers {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.away-scorers {
+  text-align: right;
+}
+
+/* Timeline */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  position: relative;
+  padding-left: var(--space-6);
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 2px;
+  background-color: var(--border-subtle);
+}
+
+.timeline-event {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  position: relative;
+}
+
+.event-time {
+  font-weight: 700;
+  width: 32px;
+  text-align: right;
+}
+
+.event-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: var(--radius-full);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.bg-yellow {
+  background-color: var(--warning);
+}
+
+.bg-green {
+  background-color: transparent;
+}
+
+.event-detail {
+  background-color: var(--surface-elevated);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  flex: 1;
+  border: 1px solid var(--border-subtle);
+}
+
+/* Match Center Lineups Tactical Pitch Integration */
+.mc-lineup-pitch-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface-panel);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.mc-lineup-pitch-wrapper .referee-pitch-wrapper {
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mc-lineup-pitch-wrapper .ref-tactical-pitch-field {
+  min-height: 460px;
+  border: 2px solid rgba(255, 255, 255, 0.22);
+}
+
+.mc-lineup-team-tabs button:hover {
+  border-color: rgba(255, 94, 0, 0.5) !important;
+}

@@ -1,0 +1,156 @@
+.following-container {
+  padding: var(--space-4);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.following-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-8);
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-full);
+  background-color: var(--surface-elevated);
+  border: 1px solid var(--nova-orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--space-4);
+  box-shadow: 0 0 15px rgba(255, 94, 0, 0.2);
+}
+
+.popular-suggestions h2 {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-4);
+}
+
+.suggestion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-4);
+}
+
+.following-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-6);
+  margin-top: var(--space-4);
+}
+
+.following-header h1 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 2rem;
+}
+
+.icon-button {
+  background-color: var(--surface-elevated);
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.icon-button:hover {
+  border-color: var(--nova-orange);
+  color: var(--stadium-white);
+}
+
+.feed-section {
+  margin-bottom: var(--space-8);
+}
+
+.followed-teams {
+  display: flex;
+  gap: var(--space-3);
+  overflow-x: auto;
+  padding-bottom: var(--space-2);
+}
+
+.followed-badge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background-color: var(--surface-elevated);
+  padding: 4px 12px 4px 4px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-subtle);
+  white-space: nowrap;
+}
+
+.badge-logo {
+  background-color: var(--pitch-black);
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-full);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.empty-state-text {
+  color: var(--text-muted);
+}
+
+.add-follow-button {
+  border: 1px dashed var(--border-subtle);
+  border-radius: var(--radius-full);
+  padding: 0 var(--space-4);
+  color: var(--nova-orange);
+  white-space: nowrap;
+}
+
+.add-follow-button:hover {
+  background-color: rgba(255, 94, 0, 0.1);
+}
+
+.activity-feed h2 {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-4);
+}
+
+.feed-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.feed-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.feed-time {
+  font-size: 0.75rem;
+  color: var(--nova-orange);
+  font-weight: 700;
+}
+
+.feed-item h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: none;
+  font-family: var(--font-body);
+}
+
+.feed-item p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}

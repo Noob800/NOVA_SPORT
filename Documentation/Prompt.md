@@ -91,3 +91,11 @@ Begin by returning a concise repository assessment, proposed architecture, recom
 The final product must feel like a carefully curated football platform, not a generic template. Every design and architectural decision should support one goal: making NovaSport the trusted digital home of football competitions, from KeMU Super League Season 8 to an expanding ecosystem of future competitions.
 
 Non-negotiable principle: build the reusable NovaSport platform first. KeMU Super League Season 8 is its first competition, not its architectural boundary.
+we are designing the admin side ui and frontend design and the correct user journey..we are somewhere but what we have is too complex and we want a minimalistic straight to the point application
+we want a way to manage a league and it season but a league can only have one season at a time but we can view past seasons we dont want it to be sophisticated just a simple and accurate and articulate interphase for managing this which should not be distribute across the whole app rather a dedicated place for managing and editing this..
+this will include the autogeneration of fixtures and a fallback management of fixtures 
+we can only add teams to a league if we have registered them.. for now the admin will controll the team registration
+a team can be in multiple tournament as the league continues and we shouldnt have to reregister the team again rather use the existing data o the team
+we also manage and add officials and apoint coaches of a team 
+we dont have so many officials since it just a local league so no unnecessary whatever documents like fifa and fiba reglations just NSFC approved, for registrations etc so we should make this as easy and direct as possible
+we have to make it easy for the admin to approve players that a coach has invited to a team basivally so that they can be added to a team roaster . remove the competition lifecycle hub in the current design we will need to know a minimalistic way to track a league/ competition

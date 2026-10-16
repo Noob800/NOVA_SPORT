@@ -1,0 +1,112 @@
+.mynova-container {
+  padding: var(--space-4);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+  margin-top: var(--space-4);
+}
+
+.profile-avatar {
+  background-color: var(--surface-elevated);
+  border: 2px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-name {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.profile-subtitle {
+  color: var(--text-muted);
+}
+
+.workspace-description {
+  color: var(--text-muted);
+  margin-bottom: var(--space-4);
+  font-size: 0.95rem;
+}
+
+.workspace-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.workspace-link {
+  display: flex;
+  align-items: center;
+  padding: var(--space-3);
+  background-color: var(--pitch-black);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.workspace-link:hover {
+  border-color: var(--nova-orange);
+  transform: translateY(-2px);
+}
+
+.workspace-icon {
+  color: var(--nova-orange);
+  background-color: rgba(255, 94, 0, 0.1);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: var(--space-4);
+}
+
+.workspace-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.workspace-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--stadium-white);
+}
+
+.workspace-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.chevron {
+  color: var(--text-muted);
+}
+
+.login-button {
+  background-color: var(--nova-orange);
+  color: var(--pitch-black);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-4);
+  font-weight: 700;
+  font-family: var(--font-display);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: opacity 0.2s;
+}
+
+.login-button:hover {
+  opacity: 0.9;
+}

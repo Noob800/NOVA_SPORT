@@ -1,19 +1,32 @@
 :root {
   /* Brand Colors */
-  --nova-orange: #ff5e00;
+  --nova-orange: #FF6A00;
   --pitch-black: #101113;
-  --stadium-white: #f5f5f2;
-  --steel-grey: #777b80;
+  --stadium-white: #F5F5F2;
+  --steel-grey: #777B80;
+
+  /* Surfaces & Hierarchy */
+  --surface-base: #101113;
+  --surface-panel: #16181B;
+  --surface-card: #1C1E22;
+  --surface-elevated: #23262C;
+  --surface-elevated-hover: #2B2F37;
+  --border-subtle: #2C2F36;
+  --border-strong: #3D424B;
+
+  /* Typography Colors */
+  --text-primary: #F5F5F2;
+  --text-secondary: #777B80;
+  --text-muted: #9BA0A6;
 
   /* Semantic Colors */
-  --surface-elevated: #1a1c1f;
-  --surface-elevated-hover: #22252a;
-  --border-subtle: #2a2d33;
-  --text-muted: #9ba0a6;
-  --focus-ring: rgba(255, 94, 0, 0.4);
-  --success: #10b981;
-  --warning: #f59e0b;
-  --error: #ef4444;
+  --focus-ring: rgba(255, 106, 0, 0.4);
+  --brand-orange-subtle: rgba(255, 106, 0, 0.12);
+  --brand-orange-border: rgba(255, 106, 0, 0.35);
+  --success: #10B981;
+  --warning: #F59E0B;
+  --error: #EF4444;
+  --info: #38BDF8;
 
   /* Typography */
   --font-display: 'Barlow Condensed', sans-serif;

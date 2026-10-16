@@ -1,0 +1,144 @@
+.explore-container {
+  padding: var(--space-4);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search-header {
+  margin-bottom: var(--space-6);
+  margin-top: var(--space-4);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: var(--surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  padding: var(--space-3) var(--space-4);
+}
+
+.search-bar input {
+  background: none;
+  border: none;
+  color: var(--stadium-white);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  width: 100%;
+  margin-left: var(--space-3);
+  outline: none;
+}
+
+.search-bar input::placeholder {
+  color: var(--text-muted);
+}
+
+.search-icon {
+  color: var(--text-muted);
+}
+
+.explore-sections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.explore-section h2 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 1.5rem;
+  margin-bottom: var(--space-4);
+  letter-spacing: 0;
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-4);
+}
+
+.explore-card {
+  background-color: var(--surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.explore-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--nova-orange);
+}
+
+.card-image {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.bg-orange { background-color: var(--nova-orange); color: rgba(0,0,0,0.2); }
+.bg-blue { background-color: #3b82f6; }
+.bg-grey { background-color: var(--border-subtle); }
+
+.team-logo-placeholder {
+  background-color: var(--pitch-black);
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--stadium-white);
+}
+
+.card-info {
+  padding: var(--space-3);
+}
+
+.card-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.card-info p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.explore-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  background-color: var(--surface-elevated);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  gap: var(--space-4);
+}
+
+.list-avatar {
+  background-color: var(--pitch-black);
+  border: 1px solid var(--border-subtle);
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--nova-orange);
+}
+
+.list-info h4 {
+  font-size: 1.1rem;
+}
+
+.list-info p {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
